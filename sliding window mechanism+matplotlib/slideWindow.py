@@ -43,7 +43,7 @@ def slide(infile,outfile,window_size,excList):
             w.writerow(l)
 
 ws=3
-with open("smartGridTrainerData.csv","r") as inf:
+with open("./Datasets/smartGridTrainerData.csv","r") as inf:
     with open("slidedSmartGridData.csv","w") as outf:
         slide(inf,outf,ws,["solarflux","clearingprice"])
 
